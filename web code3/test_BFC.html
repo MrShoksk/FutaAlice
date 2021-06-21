@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test BFC</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            float: left;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            /* 解决重叠问题 开启BFC的元素不会被浮动元素所覆盖 */
+            overflow: hidden;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: slateblue;
+            /*解决边距margin问题 开启BFc的元素子元素和父元素外边距不会重叠 */
+            overflow: hidden;
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+
+    <div>
+        <div class="box3">
+            <div class="box4"></div>
+        </div>
+    </div>
+</body>
+</html>

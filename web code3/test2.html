@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷 与 BFC</title>
+    <style>
+        .outer {
+            width: 300px;
+            border: 4px solid black;
+            /*开启BFC的元素可以包含浮动的子元素 开启父元素的BFC 就可以包含住子元素 */
+            overflow: hidden;
+        }
+        .inner {
+            /* 高度多少都可以，因为可以随意调整父元素 */
+            height: 400px;
+            width: 100%;
+            background-color: #888888;
+            /* 子元素浮动就会导致塌陷 */
+            float: left;
+        }
+        .outer1{
+            width: 400px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">content</div>
+    </div>
+    <div class="outer1">
+        section
+    </div>
+</body>
+</html>
