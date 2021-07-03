@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute_layout</title>
+    <style>
+        .box1 {
+            width: 600px;
+            height: 600px;
+            background-color: #888888;
+            position: relative;
+
+        }
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            /* 中间居中效果 */
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
