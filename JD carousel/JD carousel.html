@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>JD carousel_practice</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .outer{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .outer .inner {
+            position: absolute;
+        }
+        .outer :nth-child(1){
+            z-index: 1;
+        }
+        .point{
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            z-index: 999;
+        }
+        .point a {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255,255,255,.3);
+            border: 2px solid transparent;
+            background-clip: content-box;
+            border-radius: 50%;
+            float: left;
+            margin-left: 6px;
+        }
+        .point a.active,
+        .point a:hover{
+            border: 2px rgba(255,255,255,.3) solid;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<ul class="outer">
+    <li class="inner"><a href="#"> <img src="./img/01.jpg"  alt=""></a> </li>
+    <li class="inner"><a href="#"> <img src="./img/02.jpg"  alt=""></a> </li>
+    <li class="inner"><a href="#"> <img src="./img/03.jpg"  alt=""></a> </li>
+    <li class="inner"><a href="#"> <img src="./img/04.jpg"  alt=""></a> </li>
+    <div class="point">
+        <a class="active" href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+</ul>
+</body>
+</html>
