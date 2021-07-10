@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font awesome</title>
+    <link rel="stylesheet" href="./font awesome/css/all.css">
+    <style>
+       ul{
+           list-style: none;
+       }
+       /* 通过伪元素设置 */
+       li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: blue;
+            margin-right: 6px;
+       }
+       .fas{
+           font-size: 40px;
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>相见时难别亦难</li>
+        <li>东风无力百花残</li>
+        <li>春蚕到死丝方尽</li>
+        <li>蜡炬成灰泪始干</li>
+    </ul>
+    <!-- 通过实体设置 -->
+    <span class="fas"">&#xf1b0;</span>
+</body>
+</html>
