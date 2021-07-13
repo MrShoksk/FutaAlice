@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD_nav</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font awesome/css/all.css">
+    <style>
+        /* 颜色不要在body中设置，这样全局都会是一种颜色 */
+        body{
+            font: 12px/1.5 '微软雅黑';
+        }
+
+        .top_bar_wrapper{
+            width: 100%;
+            line-height: 30px;
+            background-color: #E3E4E5;
+            border-bottom: #ddd 1px solid;
+        }
+
+        /* 设置字体颜色 */
+        .top_bar a,
+        .top_bar i,
+        .top_bar span{
+            color: #999;
+            text-decoration: none;
+        }
+
+        .top_bar{
+            /* 它的子元素都浮动了，没有撑起高度的了，需解决高度塌陷 */
+            margin: 0 auto;
+            width: 1190px;
+        }   
+
+        /* 设置文字默认颜色（红） */
+        .top_bar a:hover,
+        .top_bar a.highlight{
+            color: red;
+        }
+
+        /* 解决高度塌陷 */
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .location_city{
+            float: left;
+        }
+
+        .shortcut{
+            float: right;
+        }
+
+        .shortcut li{
+            float: left;
+        }
+
+        /* 设置分割线 */
+        .shortcut .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 10px 12px;
+        }
+
+        
+        .shortcut .fas{
+            margin-left: 2px;
+        }
+
+        /* 设置小图标颜色 */
+        .location_city .fas{
+            color: #F41B15;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_bar_wrapper">
+        <div class="top_bar clearfix">
+
+            <div class="location_city">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="javascript:;">山东</a>
+            </div>
+
+            <!-- 这里面的都脱离文档流了，为避免塌陷，clearfix -->
+            <ul class="shortcut clearfix">
+                <li><a href="javascript:;">你好，请登录&nbsp;</a></li>
+                <li><a class="highlight" href="javascript:;">免费注册</a></li>
+                <li class="line"></li>
+
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a class="highlight" href="javascript:;">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+                <li>
+                    <span>手机京东</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
