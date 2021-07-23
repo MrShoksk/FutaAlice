@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aside_list</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        *{
+            text-decoration: none;
+        }
+
+        .wrapper{
+            margin: 100px auto;
+            width: 300px;
+            border-top: 1px solid #DDDDDD;
+        }
+
+        .title{
+            width: 300px;
+            line-height: 42px;
+        }
+
+        .title a{
+            display: inline-block;
+            border-top: 1px red solid;
+            margin-top: -1px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .title a:hover{
+            color: red;
+        }
+
+        .news_img img{
+            width: 300px;
+            height: 150px;
+        }
+        .news_img h2{
+            display: block;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            margin-top: -40px;
+            margin-left: 25px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .list{
+            margin-top: 20px;
+            margin-left: -5px;
+        }
+        .list a{
+            font-size: 14px;
+            font-family: '宋体',serif;
+            display: block;
+            margin-bottom: 17px;
+            color: #676767;
+        }
+
+        .list a::before{
+            content: '▪';
+            margin: 0 7px;
+            color: #DDDDDD;
+        }
+
+        .list a:hover{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="title">
+            <h1>
+                <a href="javascript:;">汽车精选</a>
+            </h1>
+        </div>
+
+        <div class="news_img">
+            <a href="javascript:;">
+                <img src="./img/ebfbfffej00ra1vj80017c0008c0050c.webp" alt="东风风神皓极">
+                <h2>东风风神皓极官图全网首曝</h2>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="javascript:;">基于新一代思域 新美版本田HR-V官图发布</a>
+            </li>
+
+            <li>
+                <a href="javascript:;">产品力大升级 2022款合创Z03售13.28万起</a>
+            </li>
+
+            <li>
+                <a href="javascript:;">运动感十足 风行T5 EVO 热浪将于今晚上市</a>
+            </li>
+
+            <li>
+                <a href="javascript:;">6大盲订权益发布 欧尚Z6将于年中上市</a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
