@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top_bar</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font awesome/css/all.css">
+    <style>
+        body{
+            font-size: 12px;
+        }
+        *{
+            text-decoration: none;
+        }
+
+        .top_bar_wrapper{
+            width: 100%;
+            height: 31px;
+            background-color: #E3E4E5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .top_bar_inner{
+            width: 1190px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+
+        .location{
+            float: left;
+        }
+
+        .city_list{
+            width: 322px;
+            height: 464px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+            display: none;
+        }
+
+        .location:hover .city_list{
+            display: block;
+        }
+
+        .location .fas{
+            color: #F41B15;
+        }
+
+        /* location外观 */
+        .current_city{
+            width: 37px;
+            padding: 0 10px;
+            border: 1px solid transparent;
+        }
+
+        .location:hover .current_city{
+            background-color: #FFFFFF;
+            padding: 0 10px;
+            border: 1px solid #CCCCCC;
+            border-bottom: none;
+        }
+
+        .shortcut{
+            float: right;
+        }
+
+        .shortcut li{
+            float: left;
+        }
+
+        .shortcut .fas{
+            margin-left: 2px;
+        }
+
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .line{
+            height: 10px;
+            width: 1px;
+            background-color: #ccc;
+            margin: 10px 10px;
+        }
+
+        .top_bar_inner a,
+        .shortcut span,
+        .shortcut i{
+            color: #999999;
+        }
+
+        .shortcut .highlight,
+        .top_bar_inner a:hover{
+            color: #EA3A33;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top_bar_wrapper">
+        <div class="top_bar_inner">
+
+            <div class="location clearfix">
+                <div class="current_city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">山东</a>
+                </div>
+
+                <div class="city_list">
+
+                </div>
+            </div>
+            
+            <ul class="shortcut clearfix">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                    <a class="highlight" href="javascript:;">免费注册</a>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a class="highlight" href="javascript:;">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <span>手机京东</span>
+                    <li class="line"></li>
+                </li>
+
+                <li>
+                    <a href="javascript:;">网站无障碍</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
