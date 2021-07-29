@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie_card</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../font awesome/css/all.css">
+    <style>
+        .wrapper {
+            width: 240px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+            margin: 0 auto;
+        }
+
+        .title h1 {
+            font-size: 18px;
+            display: block;
+            margin: 14px 90px 15px 14px;
+            color: #717171;
+        }
+
+        .title h2::before {
+            content: '\f3c5';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 14px;
+            margin-right: 7px;
+            margin-left: 22px;
+            color: #B2B2B2;
+        }
+
+        .title h2{
+            font-size: 14px;
+            color: #B2B2B2;
+        }
+
+        .title p{
+            display: block;
+            font-size: 13px;
+            color: #C1C0C0;
+            padding: 11px 22px 19px 22px;
+        }
+
+        .sign .star i{
+            float: left;
+        }
+
+        .sign .logo i{
+            float: right;
+        }
+
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .sign{
+            border: 1px solid #E8E8E8;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="img">
+            <img src="./img/1.jpg" alt="电影图片">
+        </div>
+
+        <div class="title">
+            <h1>Animation films</h1>
+
+            <h2>Animations</h2>
+
+            <p>Lorem Ipsum is simply dummy text of the printing & typesettingindustry. </p>
+        </div>
+
+        <div class="sign clearfix">
+            <ul class="star">
+                <li><i class="fas fa-star" style="color: #B7C94C;"></i></li>
+                <li><i class="fas fa-star" style="color: #B7C94C;"></i></li>
+                <li><i class="fas fa-star" style="color: #DCDCDC;"></i></li>
+                <li><i class="fas fa-star" style="color: #DCDCDC;"></i></li>
+            </ul>
+
+            <ul class="logo">
+                <li><i class="fab fa-facebook" style="color: #D5D5D5; font-size: 20px;"></i></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
